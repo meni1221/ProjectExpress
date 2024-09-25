@@ -1,0 +1,20 @@
+import {v4} from "uuid"
+
+class User{
+    public id:string
+    public followeres:string []=[]
+    public following:string []=[]
+    public isLockAccount:boolean = false
+    public token?:string
+    constructor (
+        public username:string,
+        public password:string,
+        public email:string,
+        public birthday:Date,
+        public avatarUrl:Date,
+    ){
+      this.id = v4()  
+    }
+}
+
+export default User

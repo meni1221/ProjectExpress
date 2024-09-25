@@ -2,7 +2,6 @@
   "name": "projectexpress",
   "version": "1.0.0",
   "main": "index.ts",
-  "type": "module",
   "scripts": {
     "start": "nodemon js/index.js"
   },
@@ -16,6 +15,7 @@
     "nodemon": "^3.1.7"
   },
   "dependencies": {
+    "@types/uuid": "^10.0.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "uuid": "^10.0.0"
